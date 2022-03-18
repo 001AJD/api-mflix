@@ -1,4 +1,4 @@
 const errorHandler = (req,res,next) => {
-	res.sendStatus(500); // default error
+	res.status(404).end(); // default error
 }
  export { errorHandler }
