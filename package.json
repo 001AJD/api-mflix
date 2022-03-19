@@ -8,6 +8,7 @@
     "express": "^4.17.3",
     "helmet": "^5.0.2",
     "mongoose": "^6.2.7",
+    "redis": "^4.0.4",
     "winston": "^3.6.0"
   }
 }
