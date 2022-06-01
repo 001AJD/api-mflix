@@ -3,11 +3,11 @@
 ## Install Dependencies
 > **npm i**
 
-## Run tests
-> **npm test** 🎯
+## Run tests 🎯
+> **npm test** 
 
-## Run app
-> **npm start** ⚒️
+## Run app ⚒️
+> **npm start** 
 
 ## Folder Structure Description ⽊
 > TODO
