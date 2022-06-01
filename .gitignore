@@ -15,6 +15,7 @@ coverage
 benchmarks/graphs
 
 #DS store file
+.DS
 
 # ignore additional files using core.excludesFile
 # https://git-scm.com/docs/gitignore
