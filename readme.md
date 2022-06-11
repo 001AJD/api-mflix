@@ -1,7 +1,10 @@
 # 🎬 api-mflix 
 ### The REST API built to expose mflix sample data provided by mongodb 🔥
 ## ⬇ Install Dependencies 
-> **npm i**
+> **npm install**
+
+## ⬇ Configure Redis
+> https://redis.io/docs/getting-started/installation/
 
 ## 🎯 Run tests 
 > **npm test** 
