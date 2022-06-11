@@ -2,7 +2,8 @@
   "type": "module",
   "scripts": {
     "start": "node ./src/app.js",
-    "test": "mocha ./tests/**/*.js"
+    "test": "mocha ./tests/**/*.js",
+    "lint": "eslint ./src/**/*.js "
   },
   "dependencies": {
     "dotenv": "^16.0.0",
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "chai": "^4.3.6",
+    "eslint": "^8.17.0",
     "mocha": "^10.0.0",
     "redis-mock": "^0.56.3",
     "sinon": "^14.0.0"

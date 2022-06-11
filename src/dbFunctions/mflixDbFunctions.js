@@ -1,4 +1,4 @@
-import { movies } from '../models/movies.js'
+import { movies } from '../models/movies.js';
 import { addLog } from '../helpers/utils.js';
 const errorResponse = [
 	{
@@ -11,7 +11,7 @@ const errorResponse = [
 
 const getRandomMoviesDbFunction = (req,callback) => {
 	const start = process.hrtime.bigint();
-	const functionName = 'mflixDbFunctions => getRandomMoviesDbFunction'
+	const functionName = 'mflixDbFunctions => getRandomMoviesDbFunction';
 	const query = [
 		{$sample : {size : 5}},
 		{$project : { _id: 0, title: 1, fullplot: 1, year: 1, cast: 1, genres: 1 }}
@@ -35,6 +35,6 @@ const getRandomMoviesDbFunction = (req,callback) => {
 			}
 		}
 	});
-}
+};
 
-export { getRandomMoviesDbFunction }
+export { getRandomMoviesDbFunction };
