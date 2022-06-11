@@ -9,4 +9,4 @@ const moviesSchema = new Schema({
 });
 
 const movies = mongoose.model('movies',moviesSchema,'movies');
-export { movies }
+export { movies };

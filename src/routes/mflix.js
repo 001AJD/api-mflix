@@ -10,4 +10,4 @@ import {  movieValidationRules, validatePayload } from '../validators/validateNe
 router.get('/movies', getRandomMoviesController);
 router.post('/movie', movieValidationRules(), validatePayload, addMovieController);
 
-export { router }
+export { router };

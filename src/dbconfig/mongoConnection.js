@@ -14,6 +14,6 @@ const createConenction = () => {
 			console.log('Connected to Database...!');
 		}
 	});
-}
+};
 
-export { createConenction }
+export { createConenction };

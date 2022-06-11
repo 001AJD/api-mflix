@@ -1,4 +1,4 @@
-import { getRandomMoviesService } from '../services/mflixService.js'
+import { getRandomMoviesService } from '../services/mflixService.js';
 import { addLog } from '../helpers/utils.js';
 import { redisSet, redisGet, redisExists } from '../helpers/redisCache.js';
 const getRandomMoviesController = async (req,res) => {
@@ -24,8 +24,8 @@ const getRandomMoviesController = async (req,res) => {
 				addLog(req, functionName, start, process.hrtime.bigint());
 				res.status(200).send(response);
 			}
-		})
+		});
 	}
-}
+};
 
-export { getRandomMoviesController }
+export { getRandomMoviesController };
