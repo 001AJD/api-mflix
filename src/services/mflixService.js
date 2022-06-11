@@ -1,9 +1,9 @@
-import { getRandomMoviesDbFunction } from '../dbFunctions/mflixDbFunctions.js'
+import { getRandomMoviesDbFunction } from '../dbFunctions/mflixDbFunctions.js';
 import { getRandomMoviesServiceMapper } from './responseMapper/getRandomMoviesServiceMapper.js';
 import { addLog } from '../helpers/utils.js';
 const getRandomMoviesService = (req, callback) => {
 	const start = process.hrtime.bigint();
-	const functionName = 'mflixService => getRandomMoviesService'
+	const functionName = 'mflixService => getRandomMoviesService';
 	getRandomMoviesDbFunction(req,(err,response) => {
 		if(err)
 		{
@@ -16,6 +16,6 @@ const getRandomMoviesService = (req, callback) => {
 			callback(null, getRandomMoviesServiceMapper(response));
 		}
 	});
-}
+};
 
-export { getRandomMoviesService }
+export { getRandomMoviesService };

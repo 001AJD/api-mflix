@@ -1,7 +1,13 @@
 import express from 'express';
+
 const router = express.Router();
+
 import { getRandomMoviesController } from '../controllers/mflixController.js';
+import { addMovieController } from '../controllers/addMovieController.js';
 
-router.get('/', getRandomMoviesController);
+import {  movieValidationRules, validatePayload } from '../validators/validateNewMoviePayload.js';
 
-export { router }
+router.get('/movies', getRandomMoviesController);
+router.post('/movie', movieValidationRules(), validatePayload, addMovieController);
+
+export { router };
