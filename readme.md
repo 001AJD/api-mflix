@@ -11,3 +11,7 @@
 
 ## ⽊ Folder Structure Description 
 > TODO
+
+## Endpoints
+> **GET: /mflix/movies**   -   Returns 5 random movies
+> **POST: /mflix/movie**  -   Adds new movie
