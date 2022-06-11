@@ -3,7 +3,7 @@
 ## ⬇ Install Dependencies 
 > **npm install**
 
-## ⬇ Configure Redis
+## ⬇ Install Redis
 > https://redis.io/docs/getting-started/installation/
 
 ## 🎯 Run tests 
