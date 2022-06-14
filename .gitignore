@@ -17,5 +17,8 @@ benchmarks/graphs
 #DS store file
 .DS_Store
 
+#RDP Dump
+*.rdb
+
 # ignore additional files using core.excludesFile
 # https://git-scm.com/docs/gitignore
