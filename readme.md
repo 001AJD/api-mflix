@@ -1,5 +1,5 @@
 # 🎬 api-mflix 
-### The REST API built to expose mflix sample data provided by mongodb 🔥
+### The REST API built to expose mflix sample data provided by mongodb with Test cases🔥
 ## ⬇ Install Dependencies 
 > **npm install**
 
