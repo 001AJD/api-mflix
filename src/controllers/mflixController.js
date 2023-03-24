@@ -4,8 +4,8 @@ import { redisSet, redisGet, redisExists } from '../helpers/redisCache.js';
 const getRandomMoviesController = async (req,res) => {
 	const start = process.hrtime.bigint();
 	const functionName = 'mflixController => getRandomMoviesController';
-	const isBool = await redisExists('response');
-	if(isBool)
+	// const isBool = await redisExists('response');
+	if(false)
 	{ 
 		let response = await redisGet('response');
 		response = JSON.parse(response);
@@ -20,7 +20,7 @@ const getRandomMoviesController = async (req,res) => {
 			}
 			else
 			{
-				redisSet('response',response);
+				// redisSet('response',response);
 				addLog(req, functionName, start, process.hrtime.bigint());
 				res.status(200).send(response);
 			}

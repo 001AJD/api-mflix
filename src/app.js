@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(helmet());
 
 createConenction(); // db connection
-createRedisClient(); // redis client
+// createRedisClient(); // redis client
 
 // routers
 app.use('/mflix', mflixRouter);
